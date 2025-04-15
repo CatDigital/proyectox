@@ -12,7 +12,7 @@
                     empresas.</p>
             </div>
             <div class="col-md-6">
-                <h3>Visión</h3>
+                <h3>Visiónppp</h3>
                 <p>Ser líderes en el desarrollo de intranets modernas que potencien la gestión empresarial.</p>
             </div>
         </div>
