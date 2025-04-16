@@ -1,0 +1,24 @@
+/* public/css/login.css */
+body {
+    background: linear-gradient(to right, #6a11cb, #2575fc);
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: "Segoe UI", sans-serif;
+}
+.card {
+    border: none;
+    border-radius: 1rem;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+}
+.form-control {
+    border-radius: 0.5rem;
+}
+.btn-primary {
+    background-color: #6a11cb;
+    border: none;
+}
+.btn-primary:hover {
+    background-color: #2575fc;
+}
