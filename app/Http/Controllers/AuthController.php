@@ -10,7 +10,7 @@ class AuthController extends Controller
 {
     public function index(){
         $titulo = 'Login de usuario';
-        return view("modules.auth.login", compact("titulo"));
+        return view("layout.login", compact("titulo"));
     }
 
     public function logear(Request $request) {
@@ -39,19 +39,20 @@ class AuthController extends Controller
         return to_route('welcome');
 
     }
-
-    public function crearAdmin() {
-        // crear directamente un admin
+    public function crearAdmin()
+    {
+        //crear directamente un admin
         User::create([
-            'name' => 'Cat Digital',
+            'nombre_user' => 'Facultad Autodidacta',
             'email' => 'admin@admin.com',
             'password' => Hash::make('admin'),
+            'telefono' => 123456789,
+            'direccion' => 'Calle Ficticia 123',
             'activo' => true,
-            'rol' => 'admin'
+            'Rol' => 'admin'
         ]);
-    
+
         return "Admin creado con exito!!";
     }
-    
-    
+       
 }
