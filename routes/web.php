@@ -1,15 +1,13 @@
 <?php
 
-use App\Http\Controllers\AuthController;
 use Illuminate\Support\Facades\Route;
-use Illuminate\Support\Facades\Auth;
+use App\Http\Controllers\AuthController;
+use App\Http\Controllers\WelcomeController;
 
+// Página de login
 Route::get('/', [AuthController::class, 'index'])->name('login');
 Route::post('/logear', [AuthController::class, 'logear'])->name('logear');
-Route::get('/welcome', [AuthController::class, 'welcome'])->name('welcome');
 
-Route::get('/nosotros', function () {
-    return view('layout.nosotros');
-});
-
+// Página de bienvenida con productos (solo si ya estás logueado)
+Route::get('/welcome', [WelcomeController::class, 'index'])->name('welcome');
 
