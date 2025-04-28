@@ -29,7 +29,7 @@
                             servicios
                         </a>
                         <ul class="dropdown-menu dropdown-menu-dark">
-                            <li><a class="dropdown-item" href="#">Tu web</a></li>
+                            <li><a class="dropdown-item" href="#">Tu bbbs</a></li>
                             <li><a class="dropdown-item" href="#">Tu tienda Online</a></li>
                             <li>
                                 <hr class="dropdown-divider">
